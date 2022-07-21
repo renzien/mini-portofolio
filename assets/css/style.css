@@ -1,0 +1,198 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* CSS */
+:root {
+    --hue: 207;
+    --sat: 90%;
+    --lig: 61%;
+    --first-color: hsl(var(var(--hue), var(--sat), var(--lig)));
+    --first-color-alt: hsl(var(--hue), var(--sat), 57%);
+    --title-color: hsl(var(--hue), 12%, 15%);
+    --text-color: hsl(var(--hue), 12%, 45%);
+    --text-color-light: hsl(var(--hue). 8%, 75%);
+    --text-color-ligthen: hsl(var(--hue), 8%, 92%);
+    --body-color: hsl(var(--hue), 100%, 99%);
+    --container-color: #fff;
+
+    /* Font Size Settings */
+    --body-font: 'Poppins', sans-serif;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+}
+
+@media screen and (min-width: 968px){
+    :root {
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+/* Base CSS Settings */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    transition: .3s;
+}
+
+h1, h2, h3 {
+    color: var(--title-color);
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tema */
+
+
+/* Dark Mode */
+
+/* Reuse CSS */
+.container {
+    max-width: 968px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* Profile */
+.profile {
+    position: relative;
+    padding-top: 3-5rem;
+}
+
+.profile__container {
+    row-gap: 2rem;
+}
+
+.profile__data {
+    display: grid;
+    text-align: center;
+}
+
+.profile__perfill {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(180deg,
+                hsla(var(--hue), var(--sat), var(--lig), 1) 0%,
+                hsla(var(--hue), var(--sat), var(--lig), .2) 100%);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.profile__perfill img {
+    width: 105px;
+}
+
+.profile__border {
+    border: 3.5px solid var(--first-color);
+    justify-self: center;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-bottom: .75rem;
+}
+
+.profile__name {
+    font-size: var(--h2-font-size);
+}
+
+.profile__profession {
+    font-size: var(--smaller-font-size);
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.profile__social {
+    display: flex;
+    justify-content: center;
+    column-gap: .75rem;
+}
+
+.profile__social-link {
+    font-size: 1.25rem;
+    color: var(--title-color);
+    transition: .3s;
+}
+
+.profile__social-link:hover {
+    color: var(--first-color);
+}
+
+.profile__info {
+    grid-template-columns: repeat(3, max-content);
+    justify-content: center;
+    column-gap: 2.5rem;
+}
+
+.profile__info-group {
+    text-align: center;
+    inline-size: 10em;
+}
+/* Buttons */
+
+
+/* Filter Tabs */
+
+
+/* Projects */
+
+
+/* Skills */
+
+
+/* Hide and Show Skills */
+
+
+/* Active Button Filler */
+
+/* Footer */
+
+
+/* Scroll Bar */
+
+
+/* BreakPoint Device Responsive */
+
+
+/* small device */
+
+
+/* Med device */
+
+/* Large Device */
